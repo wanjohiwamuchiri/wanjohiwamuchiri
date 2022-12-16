@@ -4,23 +4,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> 
+<head>
+    <!-- Primary Meta Tags -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!-- Primary Meta Tags -->
 
-<title>
-    Ezen Financials Sacco Dashboard - {% block title %}{% endblock %} | Ezen
-</title>
+    <title>
+        {% block title %} wanjohiwamuchiri {% endblock %}
+    </title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="title" content="wanjohiwamuchiri">
-<meta name="author" content="wanjohiwamuchiri">
-<meta name="description" content="Wanjohi Muchiri portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="title" content="wanjohiwamuchiri">
+    <meta name="author" content="wanjohiwamuchiri">
+    <meta name="description" content="Wanjohi Muchiri portfolio">
 
-<!-- Specific Page CSS goes HERE  -->    
-{% block stylesheets %}{% endblock stylesheets %}
+    <!-- Specific Page CSS goes HERE  -->
+    {% block stylesheets %}{% endblock stylesheets %}
 
 </head>
+
 <body>
 
     {% block content %}{% endblock content %}
@@ -28,7 +29,8 @@
     {% include 'includes/scripts.html' %}
 
     <!-- Specific Page JS goes HERE  -->
-    {% block javascripts %}{% endblock javascripts %}  
+    {% block javascripts %}{% endblock javascripts %}
 
 </body>
+
 </html>
