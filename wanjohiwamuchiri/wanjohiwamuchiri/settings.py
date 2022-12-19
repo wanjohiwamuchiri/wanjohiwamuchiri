@@ -109,13 +109,14 @@ USE_I18N = True
 USE_TZ = True
 
 
-STATIC_URL = "static/"
+STATIC_URL = "/static/"
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static/'), ]
+
+STATIC_ROOT = os.path.join(BASE_DIR, "/static/")
 
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
-MEDIA_ROOT = '/home/wanjohiwamuchiri/myportfolio/media'
-MEDIA_URL = '/media/'
-STATIC_ROOT = '/home/wanjohiwamuchiri/myportfolio/static'
-STATIC_URL = '/static/'
+
