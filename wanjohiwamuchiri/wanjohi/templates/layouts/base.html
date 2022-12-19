@@ -1,0 +1,44 @@
+<!--
+
+-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Primary Meta Tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="title" content="wanjohiwamuchiri-portfolio">
+    <meta name="author" content="wanjohiwamuchiri">
+    <meta name="description" content="Wanjohi wa Muchiri portfolio">
+
+    <title>
+        {% block title %} wanjohiwamuchiri{% endblock %}
+    </title>
+
+    <!-- Specific Page CSS goes HERE  -->
+    {% block stylesheets %}
+
+    {% endblock stylesheets %}
+
+</head>
+
+<body>
+
+
+    <main class="content">
+
+        {% block content %}
+        {% endblock content %}
+
+
+    </main>
+    {% include 'includes/scripts.html' %}
+    <!-- Specific Page JS goes HERE  -->
+    {% block javascripts %}
+    {% endblock javascripts %}
+</body>
+
+</html>
