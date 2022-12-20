@@ -4,5 +4,5 @@ from .views import portfolio
 app_name = "wanjohi"
 
 urlpatterns = [
-    path('portfolio/', portfolio, name='portfolio'),
+    path('', portfolio, name='portfolio'),
 ]
